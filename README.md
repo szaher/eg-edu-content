@@ -4,14 +4,22 @@ Structured, source-linked educational content for the Egyptian curriculum.
 
 ## Grade 3
 
-This repository starts with **Egyptian Primary Grade 3 / الصف الثالث الابتدائي**.
+This repository starts with **Egyptian Primary Grade 3 / الصف الثالث الابتدائي** for academic year **2026/2027**.
 
-Official source:
+## Source status
 
-- Ministry of Education and Technical Education e-learning portal
-- Grade 3 portal: https://moe.gov.eg/ar/elearningenterypage/e-learning/?pageIndex=-4&schoolStageId=1582&schoolYearId=1933
+The Ministry of Education Grade 3 e-learning catalog is still discoverable in search results, but the live page currently returns blank/403 responses in normal browser/automated access. For that reason this repository distinguishes between:
 
-Subjects currently exposed by the Ministry Grade 3 portal include:
+- **official catalog reference** — the Ministry source of record;
+- **verified access mirror** — a reachable page that exposes the same Ministry textbook files for practical access.
+
+The source manifest is in:
+
+```
+sources/grade-3.yaml
+```
+
+## Current subjects
 
 - اللغة العربية
 - اللغة الإنجليزية
@@ -23,32 +31,25 @@ Subjects currently exposed by the Ministry Grade 3 portal include:
 - التربية الدينية الإسلامية
 - التربية الدينية المسيحية
 
-## Copyright / redistribution
-
-The Ministry states that the intellectual-property rights in the curricula are owned by the Egyptian state, and Ministry portals mark the material as all rights reserved.
-
-For that reason, this repository **does not republish Ministry textbook PDFs**. Instead it contains:
-
-1. official-source manifests;
-2. scripts for fetching official material for local use;
-3. curriculum indexes and metadata;
-4. original, structured learning material that can be built from curriculum objectives without copying textbook pages.
-
-Downloaded Ministry files go under `downloads/`, which is intentionally ignored by Git.
-
 ## Fetch Grade 3 files locally
 
 ```bash
 python3 scripts/fetch_grade3.py
 ```
 
-The script only follows Ministry-hosted links and stores any discovered PDFs under:
+The script uses the verified source manifest and stores downloaded files under:
 
 ```
 downloads/grade-3/
 ```
 
-If the Ministry changes the portal HTML or blocks automated access, open the official Grade 3 portal above and download the files manually into that directory.
+Downloaded textbook PDFs are intentionally excluded from Git.
+
+## Copyright / redistribution
+
+The Ministry states that intellectual-property rights in the curricula belong to the Egyptian state. This public repository therefore does **not** act as a mirror of the textbook PDFs.
+
+Instead it stores source metadata, fetch tooling, curriculum indexes, and original structured educational material aligned to the curriculum.
 
 ## Repository layout
 
@@ -64,13 +65,11 @@ If the Ministry changes the portal HTML or blocks automated access, open the off
     └── fetch_grade3.py
 ```
 
-## Next step
-
-The next useful layer is a normalized curriculum model:
+## Planned structured content
 
 ```
 grade -> subject -> term -> unit -> lesson -> learning objectives -> concepts
       -> examples -> practice -> assessment -> answers -> teacher/parent notes
 ```
 
-That structured layer should be original and source-referenced rather than a transcription of copyrighted textbook pages.
+The structured layer should be original and source-referenced rather than a transcription of copyrighted textbook pages.
