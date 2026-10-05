@@ -1,12 +1,33 @@
 # Grade 3 / الصف الثالث الابتدائي
 
-This directory documents the official Egyptian Grade 3 curriculum sources and the normalized content model we will build from them.
+Academic year: **2026/2027**
 
-## Official source
+## Source status
 
-Ministry of Education and Technical Education Grade 3 e-learning portal:
+The Egyptian Ministry of Education Grade 3 catalog remains the authoritative source, but its live e-learning endpoint currently returns blank/403 responses in normal access.
 
-https://moe.gov.eg/ar/elearningenterypage/e-learning/?pageIndex=-4&schoolStageId=1582&schoolYearId=1933
+Because of that, `sources/grade-3.yaml` records both:
+
+1. the Ministry catalog reference; and
+2. a verified reachable access mirror for the Grade 3 textbook collection.
+
+Do not assume that an HTTP failure from the Ministry catalog means the curriculum no longer exists.
+
+## Local textbook acquisition
+
+Run:
+
+```bash
+python3 scripts/fetch_grade3.py
+```
+
+The resulting files belong under:
+
+```
+downloads/grade-3/
+```
+
+That directory is ignored by Git.
 
 ## Planned normalized structure
 
@@ -39,6 +60,6 @@ Each lesson record should contain:
 - accessibility notes
 - language metadata
 
-## Important
+## Copyright
 
-Do not copy textbook pages or substantial passages into this repository. Create original explanatory and assessment material aligned with the curriculum and retain references to the official source.
+Do not copy textbook pages or substantial passages into this public repository. Create original explanatory and assessment material aligned with the curriculum and retain references to source material.
