@@ -1,0 +1,38 @@
+grade: 3
+stage: primary
+country: Egypt
+academic_year: "2026/2027"
+official_portal:
+  name: "Ministry of Education and Technical Education - E-learning"
+  url: "https://moe.gov.eg/ar/elearningenterypage/e-learning/?pageIndex=-4&schoolStageId=1582&schoolYearId=1933"
+subjects:
+  - id: arabic
+    name_ar: "اللغة العربية"
+    name_en: "Arabic"
+  - id: english
+    name_ar: "اللغة الإنجليزية"
+    name_en: "English"
+  - id: mathematics
+    name_ar: "الرياضيات"
+    name_en: "Mathematics"
+  - id: mathematics-en
+    name_ar: "الرياضيات باللغة الإنجليزية"
+    name_en: "Mathematics in English"
+  - id: mathematics-fr
+    name_ar: "الرياضيات باللغة الفرنسية"
+    name_en: "Mathematics in French"
+  - id: discover
+    name_ar: "اكتشف"
+    name_en: "Discover"
+  - id: discover-en
+    name_ar: "اكتشف باللغة الإنجليزية"
+    name_en: "Discover in English"
+  - id: islamic-religion
+    name_ar: "التربية الدينية الإسلامية"
+    name_en: "Islamic Religious Education"
+  - id: christian-religion
+    name_ar: "التربية الدينية المسيحية"
+    name_en: "Christian Religious Education"
+redistribution:
+  mirror_official_pdfs: false
+  reason: "Official curriculum materials are state-owned and not treated here as openly redistributable."
