@@ -1,0 +1,92 @@
+country: Egypt
+academic_year: "2026/2027"
+verified_on: "2026-10-05"
+
+official_source:
+  name: "Ministry of Education and Technical Education electronic library"
+  url: "https://ellibrary.moe.gov.eg/"
+  status: "authoritative-but-access-restricted"
+  note: "The public endpoint currently returns 403/blank responses for some clients."
+
+discovery_source:
+  name: "Natega24 educational library index"
+  url: "https://natega24.com/moe/index.html"
+  status: "verified-working"
+  reported_total_pdfs: 1398
+  reported_subjects: 90
+  reported_levels: 20
+
+levels:
+  kindergarten:
+    - slug: kg-1
+      name_ar: "رياض الأطفال — المستوى الأول"
+      reported_files: 5
+    - slug: kg-2
+      name_ar: "رياض الأطفال — المستوى الثاني"
+      reported_files: 5
+
+  primary:
+    - slug: primary-1
+      name_ar: "الصف الأول الابتدائي"
+      reported_files: 13
+    - slug: primary-2
+      name_ar: "الصف الثاني الابتدائي"
+      reported_files: 13
+    - slug: primary-3
+      name_ar: "الصف الثالث الابتدائي"
+      reported_files: 14
+    - slug: primary-4
+      name_ar: "الصف الرابع الابتدائي"
+      reported_files: 81
+    - slug: primary-5
+      name_ar: "الصف الخامس الابتدائي"
+      reported_files: 80
+    - slug: primary-6
+      name_ar: "الصف السادس الابتدائي"
+      reported_files: 77
+
+  preparatory:
+    - slug: preparatory-1
+      name_ar: "الصف الأول الإعدادي"
+      reported_files: 117
+    - slug: preparatory-2
+      name_ar: "الصف الثاني الإعدادي"
+      reported_files: 107
+    - slug: preparatory-3
+      name_ar: "الصف الثالث الإعدادي"
+      reported_files: 93
+
+  secondary:
+    - slug: secondary-1
+      name_ar: "الصف الأول الثانوي"
+      reported_files: 207
+    - slug: secondary-2
+      name_ar: "الصف الثاني الثانوي"
+      reported_files: 251
+    - slug: secondary-3
+      name_ar: "الصف الثالث الثانوي"
+      reported_files: 312
+
+  community_education:
+    - slug: community-1
+      name_ar: "الصف الأول — تعليم مجتمعي"
+      reported_files: 3
+    - slug: community-2
+      name_ar: "الصف الثاني — تعليم مجتمعي"
+      reported_files: 2
+    - slug: community-3
+      name_ar: "الصف الثالث — تعليم مجتمعي"
+      reported_files: 3
+    - slug: community-4
+      name_ar: "الصف الرابع — تعليم مجتمعي"
+      reported_files: 5
+    - slug: community-5
+      name_ar: "الصف الخامس — تعليم مجتمعي"
+      reported_files: 5
+    - slug: community-6
+      name_ar: "الصف السادس — تعليم مجتمعي"
+      reported_files: 5
+
+redistribution:
+  mirror_pdfs_in_git: false
+  reason: "Downloads are for local processing. Do not republish Ministry or third-party files without confirmed redistribution rights."
